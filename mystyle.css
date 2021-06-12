@@ -1,0 +1,37 @@
+.rectangle1{
+  height: 100px;
+  width: 200px;
+  background-color: red;
+  left: 50px;
+  top: 250px;
+  position: absolute;
+  background-image: radial-gradient(#ffd1d4,#ff9b9f,#480bf7);
+  z-index: 1;
+}
+.rectangle2{
+  height: 100px;
+  width: 200px;
+  top: 250px;
+  position: absolute;
+  left: 650px;
+  background-color: red;
+  background-image: radial-gradient(#12c2e9,#c471ed,#f64f59);
+  animation-name: move;
+  animation-duration: 6s;
+  z-index: 0;
+}
+.rectangle3{
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  background-color: red;
+  background-image: radial-gradient(#aa4b6b,#6b6b83,#3b8d99);
+  z-index: -1;
+}
+@keyframes move {
+  0%   {left:650px;top: 250px;}
+  50%  {left:1330px;top: 250px;}
+  100%  {left:0px;top: 250px;}
+}
